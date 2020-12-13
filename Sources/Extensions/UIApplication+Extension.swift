@@ -7,8 +7,9 @@
 
 import UIKit
 
-extension UIApplication {
-    static var safeAreaHeight: CGFloat? {
+public extension UIApplication {
+    
+    public static var safeAreaHeight: CGFloat? {
         if #available(iOS 11.0, *) {
             let window = UIApplication.shared.windows[0]
             return window.safeAreaLayoutGuide.layoutFrame.height
@@ -16,7 +17,7 @@ extension UIApplication {
         return nil
     }
     
-    static var bottomSafeAreaInset: CGFloat? {
+    public static var bottomSafeAreaInset: CGFloat? {
         if #available(iOS 11.0, *) {
             let window = UIApplication.shared.windows[0]
             return window.safeAreaInsets.bottom
@@ -24,7 +25,7 @@ extension UIApplication {
         return nil
     }
     
-    static var topSafeAreaInset: CGFloat? {
+    public static var topSafeAreaInset: CGFloat? {
         if #available(iOS 11.0, *) {
             let window = UIApplication.shared.windows[0]
             return window.safeAreaInsets.top

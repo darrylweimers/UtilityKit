@@ -9,15 +9,15 @@ import Foundation
 
 public extension FileManager {
     
-    static var getDocumentUrl: URL {
+    public static var getDocumentUrl: URL {
         return `default`.urls(for: .documentDirectory, in: .userDomainMask)[0]
     }
     
-    static var getApplicationSupportUrl: URL {
+    public static var getApplicationSupportUrl: URL {
         return `default`.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
     }
     
-    static func createSubDirectory(for searchDirectory: SearchPathDirectory, subdirectoryName: String) throws {
+    public static func createSubDirectory(for searchDirectory: SearchPathDirectory, subdirectoryName: String) throws {
         // url
         let customUrl = `default`.urls(for: searchDirectory, in: .userDomainMask)[0]
         // create subdirectory

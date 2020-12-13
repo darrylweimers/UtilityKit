@@ -8,13 +8,13 @@
 import Foundation
 
 
-extension Notification.Name {
+public extension Notification.Name {
     
-    static var willEnterForeground: Notification.Name {
+    public static var willEnterForeground: Notification.Name {
           return .init(rawValue: "sceneWillEnterForground")
     }
     
-    static var didEnterBackground: Notification.Name {
+    public static var didEnterBackground: Notification.Name {
           return .init(rawValue: "sceneDidEnterBackground")
     }
 }

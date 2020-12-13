@@ -8,10 +8,10 @@
 import UIKit
 
 
-extension UIButton {
+public extension UIButton {
     
     // TODO: fix this. The image is not perfecly align with text
-    func alignTextBelow(spacing: CGFloat = 6.0) {
+    public func alignTextBelow(spacing: CGFloat = 6.0) {
         guard let image = self.imageView?.image,
               let titleLabel = self.titleLabel,
               let titleText = titleLabel.text else {
