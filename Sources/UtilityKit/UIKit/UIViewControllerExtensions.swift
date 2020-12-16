@@ -8,19 +8,21 @@
 
 import UIKit
 
-// view controller containment
-// allows use to embed controller inside another
 public extension UIViewController {
     
-    public func display(contentController: UIViewController) {
-        addChild(contentController)
-        self.view.insertSubview(contentController.view, at: 0)
-        contentController.didMove(toParent: self)
+    func add(_ child: UIViewController) {
+        addChild(child)
+        view.addSubview(child.view)
+        child.didMove(toParent: self)
     }
-    
-    public func hide(contentController: UIViewController) {
-        contentController.willMove(toParent: nil)
-        contentController.view.removeFromSuperview()
-        contentController.removeFromParent()
+
+    func remove() {
+        guard parent != nil else {
+            return
+        }
+
+        willMove(toParent: nil)
+        view.removeFromSuperview()
+        removeFromParent()
     }
 }
