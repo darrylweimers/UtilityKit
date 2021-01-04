@@ -51,3 +51,12 @@ public extension UIColor {
     }
     
 }
+
+public extension UIColor {
+    
+    public struct FlatColor {
+        public static let lightGray = UIColor(hexColor: "#e9e9ea")
+        public static let purplePink = UIColor(hexColor: "#c782c2")
+    }
+    
+}
