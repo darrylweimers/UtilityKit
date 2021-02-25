@@ -11,7 +11,7 @@ import UIKit
 public extension UIButton {
     
     // TODO: fix this. The image is not perfecly align with text
-    public func alignTextBelow(spacing: CGFloat = 6.0) {
+    func alignTextBelow(spacing: CGFloat = 6.0) {
         guard let image = self.imageView?.image,
               let titleLabel = self.titleLabel,
               let titleText = titleLabel.text else {
@@ -27,7 +27,7 @@ public extension UIButton {
     }
     
     
-    public func makeFloatingButtonAction(image: UIImage, tintColor: UIColor = .white, backgroundColor: UIColor = .blue) {
+    func makeFloatingButtonAction(image: UIImage, tintColor: UIColor = .white, backgroundColor: UIColor = .blue) {
             self.setImage(image, for: .normal)
             self.tintColor = tintColor
             self.backgroundColor = backgroundColor
