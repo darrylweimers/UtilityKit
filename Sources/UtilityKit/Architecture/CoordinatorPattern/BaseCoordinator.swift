@@ -8,7 +8,7 @@
 import Foundation
 
 open class BaseCoordinator: Coordinator {
-    
+
     // MARK: init
     public init() {
         
