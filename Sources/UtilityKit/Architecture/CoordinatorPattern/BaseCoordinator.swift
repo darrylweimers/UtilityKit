@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class BaseCoordinator: Coordinator {
+open class BaseCoordinator: Coordinator {
     
     // MARK: child coordinator management
     private var childCoordinators = [Coordinator]()
