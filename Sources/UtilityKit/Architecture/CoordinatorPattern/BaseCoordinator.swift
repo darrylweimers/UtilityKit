@@ -7,10 +7,10 @@
 
 import Foundation
 
-open class BaseCoordinator: Coordinator {
+open class BaseCoordinator: NSObject, Coordinator {
 
     // MARK: init
-    public init() {
+    public override init() {
         
     }
     
