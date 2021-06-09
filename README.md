@@ -12,7 +12,7 @@ This swift package contains UIKit and Foundation extensions to add features and/
 - UIColor extension
   - convenience initializer to create a color with RGB values: `init(r: CGFloat, g: CGFloat, b: CGFloat)`
   - convenience initializer to create a color with a hex value: `init(hexColor: UInt32 = 0xFFFFFF)`
-  - convenience initializer to create a color with hex string`init?(hexColor: String = "#FFFFFF")`
+  - convenience initializer to create a color with hex string: `init?(hexColor: String = "#FFFFFF")`
 - UIButton extension
   - Transforms a button to a *floating action button*
 - UIFont extension
